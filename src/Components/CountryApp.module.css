@@ -96,7 +96,7 @@ font-family: sans-serif;
     border-radius: 10px;
     color: #fff;
     padding: 30px 30px;
-    transition: all 0.3s;
+    transition: all 0.4s;
 }
 .countryBox:hover{
 transform: scale(1.1);
