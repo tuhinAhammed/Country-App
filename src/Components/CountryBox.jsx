@@ -21,7 +21,7 @@ const CountryBox = (props) => {
         {/* <p >Languages : {languages}</p> */}
         <p >Area : {area}</p>
         <p >Population : {population}</p>
-        <p >Maps : <a href={maps.googleMaps} target="_blank">{maps.googleMaps}</a></p>
+        <p className={style.maps}>Maps : <a href={maps.googleMaps} target="_blank">{maps.googleMaps}</a></p>
         <p >Region : {region}</p>
         <Button onClick={() => handleDelete(name.common)} variant="danger" className={`mt-2 ${style.deleteBtn}`}>Delete</Button>
         </div>

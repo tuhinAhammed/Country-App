@@ -119,7 +119,12 @@ transform: scale(1.1);
     margin: 0px;
     padding: 0px;
 }
-
+.maps{
+    /* display: inline-block; */
+     word-wrap: break-word; 
+    /* overflow-wrap: break-word; Ensures long words break */
+    /* width: 100%; Ensures the text takes full width */
+}
 @media screen and (min-width: 320px) {
     .countryOverflow {
         grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
@@ -127,7 +132,7 @@ transform: scale(1.1);
 }
 @media screen and (min-width: 520px) {
     .countryOverflow {
-        grid-template-columns: repeat(auto-fit, minmax(70%, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
     }
 }
 
