@@ -119,10 +119,14 @@ transform: scale(1.1);
     padding: 0px;
 }
 
-
+@media screen and (min-width: 420px) {
+    .countryOverflow {
+        grid-template-columns: repeat(auto-fit, minmax(60%, 1fr));
+    }
+}
 @media screen and (min-width: 520px) {
     .countryOverflow {
-        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(70%, 1fr));
     }
 }
 
