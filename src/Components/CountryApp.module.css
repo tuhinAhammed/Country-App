@@ -106,10 +106,11 @@ transform: scale(1.1);
     height: 7rem;
 }
 .countryOverflow{
+    width: 100%;
     display: grid;
     gap: 30px;
     margin-top: 30px;
-    
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
 }
 .countryDes{
     margin-top: 10px;
@@ -119,9 +120,9 @@ transform: scale(1.1);
     padding: 0px;
 }
 
-@media screen and (min-width: 420px) {
+@media screen and (min-width: 320px) {
     .countryOverflow {
-        grid-template-columns: repeat(auto-fit, minmax(60%, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
     }
 }
 @media screen and (min-width: 520px) {
